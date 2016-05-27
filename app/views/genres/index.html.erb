@@ -1,0 +1,7 @@
+<h1>Genres</h1>
+
+<div>
+   <% @genres.each do |genre| %>
+      <%= link_to "#{genre.name} • #{genre.novels.size}", genre, class: "btn btn-primary" %>
+   <% end %>
+</div>
